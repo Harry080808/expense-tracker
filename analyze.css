@@ -1,0 +1,134 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0F172A;
+}
+
+.container{
+display:flex;
+height:100vh;
+}
+
+/* Sidebar */
+
+.user_menu{
+    height: 100vh;
+    width: 3.7rem;
+    background-color: #202A42;
+}
+
+.user_menu i{
+    font-size: 28px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    color:rgb(177,151,252);
+}
+
+.main_contain{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+#ana_title{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 4.5rem;
+    margin-left: 3.2rem;
+}
+.ana_container{
+    background-color: #1F2A44;
+    margin-top: 1.3rem;
+    margin-left: 2.5rem;
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.category_ex_Card{
+    height: 10rem;
+    width: 16rem;
+    background-color: #273352;
+    border: 1px solid #334155;
+    margin: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.category_ex_Card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.25s;
+}
+.cat-icon{
+    height: 2rem;
+    width: 2rem;
+}
+.cat-icon i{
+    font-size: 1.6rem;
+    color: #0F172A;
+}
+.cat_main{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.cat_name{
+    font-size: 1rem;
+    color: #C7D2FE;
+    font-weight: 500;
+}
+.fix_contain{
+    width: 86%;
+}
+.progress_contain{
+    height: 12px;
+    width: 80%;
+    background-color: #374151;
+    border-radius: 10px;
+}
+.progressbar{
+    height: 12px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #F59E0B;
+}
+.progress_info{
+    font-size: 0.85rem;
+    color: #9CA3AF;
+    margin-top: 0.5rem;
+}
+.Ex_info{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 0rem;
+}
+.menuBar{
+    margin-top: 5rem;
+}
+.menuBar i{
+    margin-top: 3.2rem;
+    font-size: 1.67rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: var(--icon-color);
+    transition: all 0.25s ease;
+    box-shadow: 
+    0 0 10px rgba(167,139,250,0.25),
+    0 0 20px rgba(167,139,250,0.15);
+}
+.menuBar i:hover{
+    color:#C4B5FD;
+    border-radius:10px;
+    transform: scale(1.15);
+}
+

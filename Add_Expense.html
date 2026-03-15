@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Expense Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="add_ex.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="user_menu">
+        <i class="fa-solid fa-circle-user"></i>
+        <div class="menuBar">
+          <a href="DashBoard.html"><i class="fa-solid fa-chart-column" style="color: rgb(177, 151, 252);"></i></a>
+          <a href="Add_Expense.html"><i class="fa-solid fa-file-invoice" style="color: rgb(177, 151, 252);"></i></a>
+          <a href="Analyze_expense.html"><i class="fa-solid fa-layer-group" style="color: rgb(177, 151, 252);"></i></a>
+        </div>
+      </div>
+
+      <div class="main_contain">
+        <a href="DashBoard.html"><div class="go_dash">Go to dashboard <i class="fa-solid fa-angles-right"></i></div></a>
+        <div class="slogan">Spend Better. Live Better.</div>
+        <div id="sub-info">Track income and expenses effortlessly</div>
+
+        <div class="income_form">
+          <div class="form_container">
+            <div class="form_title">New Expense</div>
+
+            <form>
+              <div class="field">
+                <label>Category</label>
+                <select>
+                  <option>Select</option>
+                  <option>Food</option>
+                  <option>Health</option>
+                  <option>Travel</option>
+                  <option>Shopping</option>
+                  <option>Rent/Housing</option>
+                  <option>Utilities</option>
+                  <option>Entertainment</option>
+                  <option>Education</option>
+                  <option>Other</option>
+                </select>
+                <div class="error-msg" id="categoryError">category is not selected.</div>
+              </div>
+
+              <div class="field">
+                <label>Amount</label>
+                <div class="input-wrapper">
+                  <span class="prefix">₹</span>
+                  <input type="text" placeholder="e.g. ₹450" />
+                </div>
+                <div class="error-msg" id="amountError">amount is not filled</div>
+              </div>
+
+              <div class="field">
+                <label>Title</label>
+                <input type="text" placeholder="e.g. Grocery Store" />
+                <div class="error-msg" id="titleError">please write title</div>
+              </div>
+
+              <div class="field">
+                <label>Date</label>
+                <input type="date" />
+                <div class="error-msg" id="dateError">date is not selected</div>
+              </div>
+
+              <button class="add_Income" type="submit">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="add_expense.js"></script>
+  </body>
+</html>

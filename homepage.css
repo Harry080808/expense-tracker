@@ -1,0 +1,132 @@
+:root{
+    --icon-color:##A78BFA;
+}
+
+html{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Inter',sans-serif;
+    background-color: #0F172A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slogan{
+    color: azure;
+    font-size: 2rem;
+    margin: 3rem 0rem 0rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#sub-info{
+    color: azure;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0.9rem;
+    font-weight: 200;
+}
+.income_form{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111827;
+    gap: 1.7rem;
+    padding: 2rem 3rem;
+    border-radius: 0.8rem;
+    box-shadow:0 0 20px rgba(255,255,255,0.15);
+}
+.form_title{
+    color: azure;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 1px 10px;
+    transition: border-color 0.25s ease-in-out;
+}
+.prefix{
+    color: white;
+    margin-right: 5px;
+    user-select: none;
+}
+.input-wrapper input{
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+.input-wrapper:focus-within{
+    border: 1px solid #5696FF;
+}
+form .add_Income{
+    margin-top: 1.5rem;
+    margin-left: 3.6rem;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(#5696FF,#1C4382);
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.9;
+}
+.imp-note{
+    margin-top: 2rem;
+    color: #94A3B8;
+    font-size: 0.88rem;
+}
+.user_menu{
+    height: 100vh;
+    width: 3.7rem;
+    background-color: #202A42;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.main_contain{
+    height: 100vh;
+    width: 100%;
+}
+.user_menu i{
+   font-size: 28px;
+   margin-left: 1rem;
+   margin-top: 1.5rem;
+}
+.menuBar{
+    margin-top: 5rem;
+}
+.menuBar i{
+    margin-top: 3.2rem;
+    font-size: 1.67rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: var(--icon-color);
+    transition: all 0.25s ease;
+}
+.menuBar i:hover{
+    color:#C4B5FD;
+    border-radius:10px;
+    transform: scale(1.15);
+}
