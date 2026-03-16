@@ -10,7 +10,7 @@ let cards = JSON.parse(localStorage.getItem("cards"))
 let Income = Number(localStorage.getItem("income"))
 userIncome.textContent = `₹${Income.toLocaleString("en-IN")}`;
 
-let expenses = JSON.parse(localStorage.getItem("expense"))
+let expenses = JSON.parse(localStorage.getItem("expense")) || [];
 
 if(!Income && expenses.length === 0){
     showErrorPage();
