@@ -11,6 +11,10 @@ let Income = Number(localStorage.getItem("income"))
 userIncome.textContent = `₹${Income.toLocaleString("en-IN")}`;
 
 let expenses = JSON.parse(localStorage.getItem("expense"))
+
+if(!Income && expenses.length === 0){
+    showErrorPage();
+}
 let totalExpense = 0;
 let topSpentAmt = 0;
 let topCat = "";
@@ -130,3 +134,13 @@ expenses.map((element,i) =>{
     Tr.appendChild(tdDelete);
     table.appendChild(Tr)
 })
+
+function showErrorPage(){
+    const dashboard = document.querySelector(".main_contain");
+    const errorPage = document.querySelector("#errorPage");
+
+    dashboard.style.display = "none"
+    errorPage.style.display = "flex";
+
+    return;
+}

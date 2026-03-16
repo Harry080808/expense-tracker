@@ -319,3 +319,12 @@ a{
     transform:translateY(-2px);
     box-shadow:0 6px 18px rgba(99,102,241,0.35);
 }
+
+#errorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
