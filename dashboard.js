@@ -140,7 +140,7 @@ function showErrorPage(){
     const errorPage = document.querySelector("#errorPage");
 
     dashboard.style.display = "none"
-    errorPage.style.display = "block";
+    errorPage.style.display = "flex";
 
     return;
 }
